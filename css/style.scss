@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.conteudo {
+  background-color: #ccc;
+}
+.conteudo > main {
+  background-color: rgb(83, 82, 82);
+  flex: 1;
+}
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+}
+.conteudo {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+}
+.conteudo > nav {
+  order: -1;
+  text-align: center;
+}
+a {
+  background-color: rgb(37, 36, 36);
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+
+  line-height: 50px;
+  color: #eee;
+}
+a:hover {
+  background-color: tomato;
+  color: rgb(49, 46, 46);
+}
+@media (min-width: 768px) {
+  .conteudo {
+    flex-flow: row;
+  }
+  .conteudo > nav,
+  .conteudo > aside {
+    flex: 0 0 250px;
+  }
+}
+@media (min-width: 768px) {
+  .conteudo > nav {
+    display: flex;
+    flex-flow: column;
+  }
+}
