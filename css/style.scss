@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-.conteudo {
-  background-color: #ccc;
-}
+
 .conteudo > main {
-  background-color: rgb(83, 82, 82);
+  background-color: rgb(231, 230, 230);
   flex: 1;
+  box-shadow: 0 0 8px #ccc;
 }
 body {
   max-width: 1920px;
@@ -15,44 +14,139 @@ body {
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  background-color: #eee;
+}
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #eee;
+  }
+  .logo img {
+    box-shadow: 0 0 6px;
+  }
+  #conteudobanner {
+    text-align: center;
+    margin-top: 10px;
+  }
 }
 h1 {
   font-family: "Poppins", sans-serif;
   font-size: 42px;
+  color: rgb(46, 78, 167);
+}
+p {
+  width: 80%;
 }
 .conteudo {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
   flex-flow: column;
 }
+
 .conteudo > nav {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
   order: -1;
   text-align: center;
 }
-a {
-  background-color: rgb(37, 36, 36);
-  border-bottom: 1px solid #eee;
-  text-decoration: none;
 
-  line-height: 50px;
-  color: #eee;
+@media (max-width: 768px) {
+  a {
+    background-color: rgb(113, 148, 243);
+    text-decoration: none;
+    line-height: 50px;
+    color: rgb(6, 12, 31);
+    padding: 10px;
+    margin: 5px;
+    transition: 0.2s;
+    border-radius: 0 14px 0 14px;
+  }
 }
-a:hover {
-  background-color: tomato;
-  color: rgb(49, 46, 46);
+@media (max-width: 768px) {
+  a:hover {
+    background-color: rgb(46, 78, 167);
+    color: rgb(161, 183, 243);
+    transition: 0.2s;
+  }
 }
 @media (min-width: 768px) {
   .conteudo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
     flex-flow: row;
   }
   .conteudo > nav,
   .conteudo > aside {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 250px;
     flex: 0 0 250px;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+  }
+  aside {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  a {
+    background-color: rgb(113, 148, 243);
+    border-bottom: 1px solid rgb(10, 15, 27);
+    text-decoration: none;
+
+    line-height: 50px;
+    color: rgb(6, 12, 31);
+  }
+  a:hover {
+    background-color: rgb(46, 78, 167);
+    color: rgb(161, 183, 243);
+  }
+}
+
+@media (min-width: 768px) {
+  .conteudo > nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
   }
 }
 @media (min-width: 768px) {
-  .conteudo > nav {
+  header {
     display: flex;
-    flex-flow: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: #eee;
+    margin-left: 20px;
+  }
+  .logo img {
+    box-shadow: 0 0 6px;
+  }
+  #conteudobanner {
+    margin-right: 30%;
+    text-align: center;
+    margin-top: 10px;
   }
 }
