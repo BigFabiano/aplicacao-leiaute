@@ -25,6 +25,18 @@ body {
   background-color: #eee;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media (max-width: 768px) {
   header {
     display: -webkit-box;
@@ -104,6 +116,16 @@ p {
     -webkit-transition: 0.2s;
     transition: 0.2s;
   }
+}
+
+footer {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #eee;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c2b2b;
 }
 
 @media (min-width: 768px) {
@@ -197,6 +219,66 @@ p {
     margin-right: 30%;
     text-align: center;
     margin-top: 10px;
+  }
+}
+
+img.imgcon {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*align-items: center;*/
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  p {
+    margin-left: 15px;
+    color: #4d4a4a;
+  }
+  h2 {
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  aside {
+    margin-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .spam {
+    font-size: 16px;
+    font-weight: bold;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #eee;
   }
 }
 /*# sourceMappingURL=style.css.map */
